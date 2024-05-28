@@ -79,7 +79,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.dealcart"
                 artifactId = "cricket-game"
-                version = "1.0.0"
+                version = "1.0.1"
             }
         }
     }
