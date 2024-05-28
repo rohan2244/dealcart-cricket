@@ -76,7 +76,7 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            register<MavenPublication>("release") {
+            create<MavenPublication>("release") {
                 groupId = "com.github.dealcart"
                 artifactId = "cricket-game"
                 version = "1.0.0"

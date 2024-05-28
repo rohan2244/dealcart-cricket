@@ -53,8 +53,6 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.48")
     kapt("com.google.dagger:hilt-android-compiler:2.48")
 
-    implementation("com.github.DealCart:dealcart-analytics:1.0.1")
     implementation(project(":cricketgame"))
 
-//    implementation("com.github.rohan2244:dealcart-cricket:-4b049ca0ea-1")
 }
