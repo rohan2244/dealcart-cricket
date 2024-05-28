@@ -10,6 +10,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.bitorbits.bridge.BridgeHandles
 import dagger.hilt.android.AndroidEntryPoint
+import io.dealcart.cricket.data.LeaderboardListUiData
+import io.dealcart.cricket.data.LeaderboardUiData
 import io.dealcart.cricket.databinding.FragmentCricketGameBinding
 
 @AndroidEntryPoint
@@ -24,12 +26,27 @@ class CricketFragment : Fragment() {
             cricketViewModel.addUserCricketScore(requireContext(), data?.toInt() ?: 0)
         },
         "android.game_leaderboard" to {
-            cricketViewModel.leaderboardLiveData.value?.let {
-                findNavController().navigate(
-                    CricketFragmentDirections.actionCricketGameFragmentToCricketLeaderboardDialogFragment(
-                        it
+            val lead = LeaderboardUiData(
+                firstRankName = "Saad",
+                firstRankScore = 2,
+                secondRankName = "Rohan",
+                secondRankScore = 4,
+                thirdRankName = "Zain",
+                thirdRankScore = 4,
+                userRankScore = 2,
+                userRank = 5,
+                leaderboardList = listOf(
+                    LeaderboardListUiData(
+                        5, "Tatheer", 3
                     )
                 )
+            )
+            findNavController().navigate(
+                CricketFragmentDirections.actionCricketGameFragmentToCricketLeaderboardDialogFragment(
+                    lead
+                )
+            )
+            cricketViewModel.leaderboardLiveData.value?.let {
             }
         },
         "android.game_quit" to {
