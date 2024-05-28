@@ -41,11 +41,11 @@ class CricketFragment : Fragment() {
                     )
                 )
             )
-//            findNavController().navigate(
-//                CricketFragmentDirections.actionCricketGameFragmentToCricketLeaderboardDialogFragment(
-//                    lead
-//                )
-//            )
+            findNavController().navigate(
+                CricketFragmentDirections.actionCricketGameFragmentToCricketLeaderboardDialogFragment(
+                    lead
+                )
+            )
             cricketViewModel.leaderboardLiveData.value?.let {
             }
         },
