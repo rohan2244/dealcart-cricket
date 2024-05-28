@@ -1,4 +1,4 @@
-package com.example.dealcartcricket
+package com.example.cricket
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

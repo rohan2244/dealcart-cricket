@@ -1,12 +1,9 @@
-package com.example.dealcartcricket
+package com.example.cricket
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import io.dealcart.cricket.CricketGameActivity
+import com.example.dealcart_cricket.CricketGameActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

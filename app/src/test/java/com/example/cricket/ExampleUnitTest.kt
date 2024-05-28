@@ -1,4 +1,4 @@
-package com.example.dealcartcricket
+package com.example.cricket
 
 import org.junit.Test
 
