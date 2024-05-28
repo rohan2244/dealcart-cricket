@@ -10,7 +10,8 @@
         android:label="CricketGameFragment" >
         <action
             android:id="@+id/action_cricketGameFragment_to_cricketLeaderboardDialogFragment"
-            app:destination="@id/cricketLeaderboardDialogFragment" />
+            app:destination="@id/cricketLeaderboardDialogFragment"
+            app:popUpTo="@id/cricketGameFragment" />
     </fragment>
     <dialog
         android:id="@+id/cricketLeaderboardDialogFragment"
