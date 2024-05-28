@@ -23,7 +23,7 @@ class CricketLeaderboardDialogFragment : DialogFragment() {
 
     val dialogStyle: Int = R.style.CricketLeaderboardDialogTheme
 
-    private val args: CricketLeaderboardDialogFragmentArgs by navArgs()
+//    private val args: CricketLeaderboardDialogFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,8 +38,8 @@ class CricketLeaderboardDialogFragment : DialogFragment() {
         binding = FragmentCricketLeaderboardDialogBinding.inflate(inflater, container, false)
 
         binding.viewModel = cricketLeaderboardDialogViewModel
-        val leaderboardAdapter = CricketLeaderboardListAdapter(args.argsData.leaderboardList)
-        binding.adapter = leaderboardAdapter
+//        val leaderboardAdapter = CricketLeaderboardListAdapter(args.argsData.leaderboardList)
+//        binding.adapter = leaderboardAdapter
 
         binding.recyclerView.setOnTouchListener(object : OnTouchListener {
             override fun onTouch(v: View?, event: MotionEvent?): Boolean {
